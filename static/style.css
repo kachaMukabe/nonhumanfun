@@ -1,0 +1,22 @@
+:root {
+	--animate-delay: 0.5s;
+}
+
+@font-face {
+	font-family: customFont;
+	src: url(Camar.otf);
+}
+
+@font-face {
+	font-family: bodyFont;
+	src: url(Roboto-Regular.ttf)
+}
+
+body, button{
+	font-family: bodyFont;
+}
+
+h1 {
+	font-family: customFont;
+}
+

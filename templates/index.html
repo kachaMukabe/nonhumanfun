@@ -7,6 +7,11 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"
   </head>
   <body>
     <section class="hero is-small is-link">
@@ -44,26 +49,25 @@
       </div>
       <div class="hero-body">
         <div class="container has-text-centered">
-          <p class="title">NonHumanFun</p>
-          <p class="subtitle">Subtitle</p>
+          <h1 class="title">A.I powered greeting cards</h1>
         </div>
       </div>
     </section>
     <div class="container">
       <div class="columns is-mobile is-centered">
         <div class="column is-half">
+	  <div id="target"></div>
           <div id="parent-div">
-            <h1 class="title">Genereate a greeting card!</h1>
-            <p class="subtitle">Pick a greeting</p>
+            <h1 class="title">Pick a greeting to get a card!</h1>
             <div class="block">
               <button
                 hx-post="/get-greeting/Merry christmas"
                 hx-target="#parent-div"
                 hx-swap="outerHTML"
                 hx-indicator="#indicator"
-                class="button is-fullwidth is-outlined"
+                class="button is-fullwidth is-outlined animate__animated animate__bounceIn"
               >
-                Merry xmas
+                Merry xmas...
               </button>
             </div>
             <div class="block">
@@ -72,9 +76,9 @@
                 hx-target="#parent-div"
                 hx-swap="outerHTML"
                 hx-indicator="#indicator"
-                class="button is-fullwidth is-outlined"
+                class="button is-fullwidth is-outlined animate__animated animate__bounceIn animate__delay-1s"
               >
-                Happy Holidays
+                Happy Holidays...
               </button>
             </div>
             <div class="block">
@@ -83,23 +87,22 @@
                 hx-target="#parent-div"
                 hx-swap="outerHTML"
                 hx-indicator="#indicator"
-                class="button is-fullwidth is-outlined"
+                class="button is-fullwidth is-outlined animate__animated animate__bounceIn animate__delay-2s"
               >
-                Happy Hannukuh
+                Happy Hannukuh...
               </button>
             </div>
             <div class="block">
               <progress
                 id="indicator"
-                class="progress is-small is-primary htmx-indicator"
+                class="progress is-small is-primary htmx-indicator animate__animated animate__pulse animate__duration-5s"
                 max="100"
               >
                 15%
               </progress>
             </div>
           </div>
-	  <div class="block">
-		  <div id="target"></div>
+	  <div class="block mt-2">
 		  <div id="app"></div>
 	  </div>
         </div>

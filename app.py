@@ -15,6 +15,7 @@ def index():
 def get_greeting(start_str):
     templ = """
     <div class="block">
+        <h1 class="title">{{ title }}</h1>
         <p>{{ greeting }}</p>
     </div>
     """
@@ -27,7 +28,7 @@ def get_greeting(start_str):
             )
     pprint.pprint(r)
     response = r.json()
-    return render_template_string(templ, greeting=response["output"])
+    return render_template_string(templ, greeting=response["output"], title=start_str)
 
 
 
