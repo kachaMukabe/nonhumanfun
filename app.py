@@ -1,5 +1,4 @@
 import requests
-import pprint
 
 from flask import Flask, render_template, render_template_string
 
@@ -26,11 +25,8 @@ def get_greeting(start_str):
                 },
             headers={ 'api-key': 'quickstart-QUdJIGlzIGNvbWluZy4uLi4K' }
             )
-    pprint.pprint(r)
     response = r.json()
     return render_template_string(templ, greeting=response["output"], title=start_str)
 
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
