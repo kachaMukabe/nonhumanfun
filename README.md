@@ -17,8 +17,7 @@ This video can then be shared with your aforementioned ~arch nemesis~ friend/wor
 
 ## Demo
 
-Insert gif or link to demo
-
+![Gif of Nonhumanfun](https://cdn.loom.com/sessions/thumbnails/7128c664604e4a35bd1702e842d0a41c-with-play.gif)
 
 ## Lessons Learned
 
@@ -31,7 +30,7 @@ I learned a couple of things building this website:
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/764/709/datas/original.png)
 
 
 ## Appendix
@@ -47,9 +46,7 @@ Built using the following:
 ## Roadmap
 
 - Additional holiday greetings
-
 - Additional greetings for other occasions
-
 - Saving the loom videos to share both the video and greeting
 
 
